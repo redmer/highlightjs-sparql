@@ -1,8 +1,8 @@
-`highlight.js` syntax definition for Solidity.
+`highlight.js` syntax definition for Turtle.
 
 For more about highlight.js, see https://highlightjs.org/
 
-For more about Solidity, see http://solidity.readthedocs.io/
+For more about Turtle, see https://www.w3.org/TR/turtle/
 
 ### Usage
 
@@ -12,9 +12,9 @@ If you're not using a build system and just want to embed this in your webpage:
 
 ```html
 <script type="text/javascript" src="/path/to/highlight.pack.js"></script>
-<script type="text/javascript" src="/path/to/highlightjs-solidity/solidity.js"></script>
+<script type="text/javascript" src="/path/to/highlightjs-turtle/turtle.js"></script>
 <script type="text/javascript">
-    hljs.registerLanguage('solidity', window.hljsDefineSolidity);
+    hljs.registerLanguage('turtle', window.hljsDefineTurtle);
     hljs.initHighlightingOnLoad();
 </script>
 ```
@@ -23,18 +23,16 @@ If you're using webpack / rollup / browserify / node:
    
 ```javascript
 var hljs = require('highlightjs');
-var hljsDefineSolidity = require('highlightjs-solidity');
+var hljsDefineTurtle = require('highlightjs-turtle');
 
-hljsDefineSolidity(hljs);
+hljsDefineTurtle(hljs);
 hljs.initHighlightingOnLoad();
 ```
 
 ### Advanced
 
-This is a pretty simple package, the only thing you might want to do differently is name the language something other than `solidity`. If you want to do this, simply `import { definer } from 'highlightjs-solidity';` and use it like: `hljs.registerLanguage('othername', definer);`.
+This is a pretty simple package, the only thing you might want to do differently is name the language something other than `turtle`. If you want to do this, simply `import { definer } from 'highlightjs-turtle';` and use it like: `hljs.registerLanguage('othername', definer);`.
 
 ### About the author
 
-Find me at http://pospi.spadgos.com
-
-Tip me some ether? (; `0x52c04Bf91ebB58221A4ac65967e4CDa15a871eba`
+The code for Turtle was taken from the non-merged pull request by Mark Ellis, at https://github.com/ellismarkf/highlight.js/blob/c65ea836b3785a5b2ee2078461edaf38c005247d/src/languages/sparql.js
