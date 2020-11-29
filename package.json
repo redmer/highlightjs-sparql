@@ -1,29 +1,29 @@
 {
-  "name": "highlightjs-solidity",
-  "version": "1.0.19",
-  "description": "highlight.js syntax definition for Ethereum's Solidity language",
-  "main": "solidity.js",
+  "name": "highlightjs-turtle",
+  "version": "1.0.1",
+  "description": "highlight.js syntax definition for the semantic web language Turtle",
+  "main": "src/languages/turtle.js",
   "files": [],
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/markup/turtle/default.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/pospi/highlightjs-solidity.git"
+    "url": "git+ssh://git@github.com/redmer/highlightjs-turtle.git"
   },
   "keywords": [
-    "Solidity",
-    "Ethereum",
+    "turtle",
+    "semantic web",
     "highlight.js",
     "highlightjs",
     "syntax"
   ],
-  "author": "pospi",
+  "author": "redmer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/highlightjs/highlightjs-solidity/issues"
+    "url": "https://github.com/redmer/highlightjs-turtle/issues"
   },
-  "homepage": "https://github.com/highlightjs/highlightjs-solidity#readme",
+  "homepage": "https://github.com/redmer/highlightjs-turtle#readme",
   "devDependencies": {
     "highlightjs": "^9.12.0",
     "mocha": "^6.2.1",
