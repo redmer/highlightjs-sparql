@@ -4,9 +4,10 @@ Author: Redmer KRONEMEIJER <redmer.kronemeijer@rdmr.eu>
 Contributors: Mark ELLIS <mark.ellis@stardog.com>, Vladimir ALEXIEV <vladimir.alexiev@ontotext.com>
 */
 
-var module = module ? module : {};     // shim for browser use
+// var module = module ? module : {};     // shim for browser use
 
-function hljsDefineTurtle(hljs) {
+// function hljsDefineTurtle(hljs) {
+export default function (hljs) {
   var KEYWORDS = {
     keyword: 'BASE|10 PREFIX|10 @base|10 @prefix|10',
     literal: 'true|0 false|0',
@@ -84,7 +85,7 @@ function hljsDefineTurtle(hljs) {
 
   return {
     name: "Turtle",
-    case_insensitive: false, // was: true, but PREFIX and @prefix are oblig. cased thus
+    case_insensitive: true, // however `true` and `@prefix` are oblig. cased thus
     keywords: KEYWORDS,
     aliases: ['turtle', 'ttl', 'n3'],
     contains: [
@@ -114,8 +115,8 @@ function hljsDefineTurtle(hljs) {
   };
 }
 
-module.exports = function (hljs) {
-  hljs.registerLanguage('turtle', hljsDefineTurtle);
-};
+// module.exports = function (hljs) {
+//   hljs.registerLanguage('turtle', hljsDefineTurtle);
+// };
 
-module.exports.definer = hljsDefineTurtle;
+// module.exports.definer = hljsDefineTurtle;
