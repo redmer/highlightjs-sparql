@@ -1,18 +1,18 @@
 {
-  "name": "highlightjs-turtle",
+  "name": "highlightjs-sparql",
   "version": "1.0.1",
-  "description": "highlight.js syntax definition for the semantic web language Turtle",
-  "main": "src/languages/turtle.js",
+  "description": "highlight.js syntax definition for the SPARQL protocol and query language",
+  "main": "src/languages/sparql.js",
   "files": [],
   "scripts": {
-    "test": "mocha test/markup/turtle/default.js"
+    "test": "mocha test/markup/sparql/default.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/redmer/highlightjs-turtle.git"
+    "url": "git+ssh://git@github.com/redmer/highlightjs-sparql.git"
   },
   "keywords": [
-    "turtle",
+    "sparql",
     "semantic web",
     "highlight.js",
     "highlightjs",
@@ -21,9 +21,9 @@
   "author": "redmer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redmer/highlightjs-turtle/issues"
+    "url": "https://github.com/redmer/highlightjs-sparql/issues"
   },
-  "homepage": "https://github.com/redmer/highlightjs-turtle#readme",
+  "homepage": "https://github.com/redmer/highlightjs-sparql#readme",
   "devDependencies": {
     "highlightjs": "^9.12.0",
     "mocha": "^6.2.1",
