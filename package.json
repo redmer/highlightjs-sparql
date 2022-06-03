@@ -1,6 +1,6 @@
 {
   "name": "highlightjs-sparql",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "highlight.js syntax definition for the SPARQL protocol and query language",
   "main": "src/languages/sparql.js",
   "files": [],
