@@ -5,10 +5,10 @@ Author: Redmer KRONEMEIJER <redmer.kronemeijer@rdmr.eu>
 Contributors: Mark ELLIS <mark.ellis@stardog.com>, Vladimir ALEXIEV <vladimir.alexiev@ontotext.com>
 */
 
-// var module = module ? module : {};     // shim for browser use
+var module = module ? module : {};     // shim for browser use
 
-// function hljsDefineSparql(hljs) {
-export default function (hljs) {
+function hljsDefineSparql(hljs) {
+// export default function (hljs) {
   var ttl = hljs.getLanguage('turtle').exports;
   var KEYWORDS = {
     keyword: 'base|10 prefix|10 @base|10 @prefix|10 add all as|0 ask bind by|0 clear construct|10 copymove create data default define delete describe distinct drop exists filter from|0 graph|10 group having in|0 insert limit load minus named|10 not offset optional order reduced select|0 service silent to union using values where with|0',
@@ -65,8 +65,8 @@ export default function (hljs) {
   };
 }
 
-// module.exports = function (hljs) {
-//   hljs.registerLanguage('sparql', hljsDefineSparql);
-// };
+module.exports = function (hljs) {
+  hljs.registerLanguage('sparql', hljsDefineSparql);
+};
 
-// module.exports.definer = hljsDefineSparql;
+module.exports.definer = hljsDefineSparql;
