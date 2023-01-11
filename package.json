@@ -2,10 +2,11 @@
   "name": "highlightjs-sparql",
   "version": "2.0.0",
   "description": "highlight.js syntax definition for the SPARQL protocol and query language",
-  "main": "src/languages/sparql.js",
+  "main": "dist/sparql.min.js",
   "files": [],
   "scripts": {
-    "test": "mocha test/markup/sparql/default.js"
+    "test": "mocha test/markup/sparql/default.js",
+    "build": "parcel build src/languages/sparql.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,8 @@
   "homepage": "https://github.com/redmer/highlightjs-sparql#readme",
   "devDependencies": {
     "highlightjs": "^9.12.0",
-    "mocha": "^6.2.1",
+    "mocha": "^10.2.0",
+    "parcel": "^2.8.2",
     "parse5": "^5.1.0"
   }
 }
